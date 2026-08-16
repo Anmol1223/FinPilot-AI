@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports | FinPilot AI</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+body{
+background:#f4f7fc;
+}
+.navbar{
+background:#2563EB;
+color:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.container{
+max-width:1200px;
+margin:auto;
+padding:30px;
+}
+.section{
+background:white;
+padding:25px;
+border-radius:15px;
+margin-bottom:25px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+h1,h2{
+color:#2563EB;
+margin-bottom:15px;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+.card{
+background:#f8faff;
+padding:20px;
+border-radius:12px;
+border-left:5px solid #2563EB;
+}
+.value{
+font-size:30px;
+font-weight:bold;
+margin-top:10px;
+}
+.health-score{
+font-size:70px;
+font-weight:bold;
+color:#10B981;
+text-align:center;
+}
+.score-text{
+text-align:center;
+color:#666;
+margin-top:10px;
+}
+.ai-box{
+background:#eef6ff;
+padding:20px;
+border-left:5px solid #2563EB;
+border-radius:10px;
+line-height:1.8;
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+table th{
+background:#2563EB;
+color:white;
+padding:12px;
+}
+table td{
+padding:12px;
+border:1px solid #ddd;
+}
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+margin-top:20px;
+}
+.btn{
+text-decoration:none;
+background:#2563EB;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+transition:0.3s;
+}
+.btn:hover{
+background:#1d4ed8;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<h2>FinPilot AI</h2>
+<span>Monthly Financial Report</span>
+</div>
+<div class="container">
+<div class="section">
+<h1>Financial Summary</h1>
+<div class="cards">
+<div class="card">
+<h3>Total Income</h3>
+<div class="value">₹50,000</div>
+</div>
+<div class="card">
+<h3>Total Expenses</h3>
+<div class="value">₹35,000</div>
+</div>
+<div class="card">
+<h3>Total Savings</h3>
+<div class="value">₹15,000</div>
+</div>
+<div class="card">
+<h3>Investments</h3>
+<div class="value">₹2,50,000</div>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Financial Health Score</h2>
+<div class="health-score">
+82
+</div>
+<div class="score-text">
+Excellent Financial Performance
+</div>
+</div>
+<div class="section">
+<h2>Income & Expense Analysis</h2>
+<table>
+<tr>
+<th>Category</th>
+<th>Amount</th>
+</tr>
+<tr>
+<td>Salary Income</td>
+<td>₹50,000</td>
+</tr>
+<tr>
+<td>Monthly Expenses</td>
+<td>₹35,000</td>
+</tr>
+<tr>
+<td>Total Savings</td>
+<td>₹15,000</td>
+</tr>
+</table>
+</div>
+<div class="section">
+<h2>🤖 FinPilot AI Analysis</h2>
+<div class="ai-box">
+✓ Your savings rate is 30%, which is above average.<br>
+✓ Emergency fund progress is strong.<br>
+✓ Increasing SIP by ₹2,000 monthly could help achieve goals faster.<br>
+✓ Your financial health score has improved compared to last month.<br>
+✓ Continue controlling discretionary expenses for greater wealth creation.
+</div>
+</div>
+<div class="section">
+<h2>Report Actions</h2>
+<div class="buttons">
+#
+#
+#
+<a href="dashboard.html" class="btn">
+Back to Dashboard
+</a>
+</div>
+</div>
+</div>
+</body>
+</html>
