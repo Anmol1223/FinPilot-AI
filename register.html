@@ -39,16 +39,63 @@ border-radius:8px;
 <body>
 <div class="card">
 <h2>Create Account</h2>
-<input type="text" placeholder="Full Name">
-<input type="email" placeholder="Email">
-<input type="tel" placeholder="Mobile Number">
-<input type="password" placeholder="Password">
-<input type="password" placeholder="Confirm Password">
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required
+minlength="3">
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required><input type="tel" placeholder="Mobile Number">
+<input
+type="password"
+id="password"
+placeholder="Password"
+required
+minlength="8"><input
+type="password"
+id="confirmPassword"
+placeholder="Confirm Password"
+required>
+Show more lines
 <center>
-register
-</a>
-</center>
+<button onclick="goToOTP()">
+Register
 </button>
+</center>
 </div>
+<script>
+function goToOTP() {
+window.location.href = "otp.html";
+}
+</script>
+<script>
+function goToOTP() {
+const name =
+document.getElementById("name").value;
+const email =
+document.getElementById("email").value;
+const password =
+document.getElementById("password").value;
+const confirmPassword =
+document.getElementById("confirmPassword").value;
+if(name.length < 3){
+alert("Enter valid name");
+return;
+}
+if(password.length < 8){
+alert("Password must be at least 8 characters");
+return;
+}
+if(password !== confirmPassword){
+alert("Passwords do not match");
+return;
+}
+window.location.href = "otp.html";
+}
+</script>
 </body>
 </html>
